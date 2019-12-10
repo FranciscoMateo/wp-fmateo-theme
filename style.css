@@ -1,0 +1,337 @@
+/*
+Theme Name: Fmateo Test Theme
+Author: FMateo
+Author URI: http://www.fmateo.es
+Description: This theme is for a test in the enterprise selection process.
+Version: 1.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+    color: #3a3a3a;
+    font-family: 'Noto Sans HK', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+.custom-header {
+    height: 870px;
+    width: 1440px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-and-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 8.75rem;
+}
+
+.title {
+    font-size: 1.45rem;
+}
+
+p.bold-first-word {
+    margin: 0;
+}
+
+.bold-first-word>strong {
+    letter-spacing: -0.06rem;
+}
+
+.menu {
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.menu-item {
+    margin-left: 3.375rem;
+}
+
+.menu-item>a {
+    text-decoration: none;
+    color: #7a797a;
+}
+
+.current-menu-item>a {
+    color: #000;
+}
+
+.header-content {
+    margin: 2rem 8.75rem;
+    width: 40%;
+}
+
+.header-content-title {
+    font-size: 4.625rem;
+}
+
+.header-content-text {
+    text-transform: initial;
+    font-size: 1.2rem;
+}
+
+.scroll-down {
+    display: flex;
+    height: 57px;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+}
+
+.content-area {
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-one, .section-two {
+    color: white;
+    width: 1440px;
+    display: flex;
+}
+
+.section-one-content {
+    background-image: linear-gradient( to right, black, hsla(0, 0%, 100%, 0));
+    padding: 6.25rem 8.75rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.section-one-title, .section-two-title, .section-four-title, .section-five-title {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+
+.section-one-text {
+    line-height: 1.7rem;
+}
+
+.section-two, .section-five-content {
+    background: #f2c478;
+}
+
+.section-two-content {
+    margin: 0 8.75rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-two-video {
+    display: flex;
+    justify-content: center;
+}
+
+.section-two-video>video {
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.8);
+}
+
+.section-two-more {
+    color: #000;
+    display: flex;
+    justify-content: center;
+    margin: 1.5em;
+}
+
+.section-two-more>p {
+    background: white;
+    padding: 0.5rem 4em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.section-three-content {
+    background: #fbfbfb;
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-three-main-image {
+    display: flex;
+}
+.main-image{
+    width: 100%;
+}
+.section-three-thumbnails {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-thumbnail-item {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.section-four-content {
+    background: #fbfbfb;
+    display: flex;
+    width: 1440px;
+    padding: 6.25rem 8.75rem;
+}
+
+.section-four-text-panel {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-four-subtitle, .section-four-text {
+    margin-top: 1em;
+}
+
+.section-four-text {
+    font-size: small;
+    line-height: 1.75rem;
+    width: 87%;
+}
+
+.section-four-image-panel {
+    display: flex;
+    width: 60%;
+}
+
+.section-four-image {
+    display: flex;
+    widows: 100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.section-four-image>img {
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-four-button {
+    margin-top: 2rem;
+}
+
+.section-four-button>a {
+    background: #f2c478;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 4em;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.section-five-content {
+    display: flex;
+    flex-direction: column;
+    padding: 6.25rem 8.75rem;
+}
+
+.section-five-text-panel {
+    color: white;
+    width: 60%;
+}
+
+.section-five-text>p {
+    margin-bottom: 0;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icon-item {
+    display: flex;
+    height: 32px;
+    width: 32px;
+    margin-right: 1rem;
+}
+
+.section-five-form-panel>form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+.form-item {
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+}
+
+.form-item::placeholder {
+    color: #000;
+}
+
+.form-item-text {
+    width: 49%;
+    height: 40px;
+    padding: 1.5em;
+}
+
+.form-item-textarea {
+    width: 100%;
+    margin-top: 2em;
+    padding: 2em;
+    height: 250px;
+    resize: vertical;
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+.form-button {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 3.5em;
+}
+
+.form-button>button {
+    background: white;
+    padding: 0.7rem 3.5em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+footer{
+    background: #4a4a4a;
+    color: white;
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.05rem;
+}
+
+footer a{
+    color: white;
+    margin-left: 1em;
+}
